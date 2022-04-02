@@ -42,7 +42,7 @@ debug: depcheck compile install configure enable restart-shell listen
 
 depcheck:
 	@echo depcheck
-	@if ! command -v tsc >/dev/null; then \
+	@if ! command -v npx tsc >/dev/null; then \
 		echo \
 		echo 'You must install TypeScript >= 3.8 to transpile: (node-typescript on Debian systems)'; \
 		exit 1; \
